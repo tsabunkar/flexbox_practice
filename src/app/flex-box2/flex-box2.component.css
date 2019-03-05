@@ -1,0 +1,36 @@
+#container {
+  /* making this parent elemenent/container -> to flex layout display */
+  display: flex;
+  width: 100%;
+  /* child elements are placed by default in row, you can change to column as below code */
+  /* column -> top to botton , row -> left to right, column-reverse -> botton to top, row-reverse -> right to left */
+  flex-direction: column;
+  /* flex-direction: row; */
+  height: 700px;
+  border: 1px solid black;
+  /* It will center the child elements along the main axis -> since flex-direction has column value so, here main
+  axis is top to bottom */
+  justify-content: center;
+  /* If we want to center the child elements along the cross axis (cross-axis is the opposite side of main axis)
+  for cross axis use -align items which has values like: flex-start, flex-end, center
+  */
+  align-items: center;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  /* flex : 1 -> this will tell to take all avilable spaces */
+}
+
+#child1 {
+  background-color: red;
+}
+
+#child2 {
+  background-color: greenyellow
+}
+
+#child3 {
+  background-color: blueviolet
+}

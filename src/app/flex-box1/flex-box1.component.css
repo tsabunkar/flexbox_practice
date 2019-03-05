@@ -1,0 +1,27 @@
+#container {
+  /* making this parent elemenent/container -> to flex layout display */
+  display: flex;
+  /* child elements are placed by default in row, you can change to column as below code */
+  flex-direction: column;
+}
+
+.child {
+  /* width: 200px; */
+  height: 200px;
+  /* flex : 1 -> this will tell to take all avilable spaces */
+  flex: 1;
+
+}
+
+#child1 {
+  background-color: red;
+  flex: 2;
+}
+
+#child2 {
+  background-color: greenyellow
+}
+
+#child3 {
+  background-color: blueviolet
+}
